@@ -1,0 +1,8 @@
+apply plugin: 'war'
+
+dependencies {
+	compile project(":gradle_ex_core")
+	compile "org.springframework:spring-webmvc:${SPRING_FRAMEWORK_VERSION}"
+}
+
+

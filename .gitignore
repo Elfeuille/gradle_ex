@@ -19,7 +19,7 @@ hs_err_pid*
 Thumbs.db
 
 .gradle
-gradle/
+gradle/*
 
 bin/
 target/

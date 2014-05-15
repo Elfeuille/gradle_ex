@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<!-- Default環境のlogbackの設定です。 -->
+<configuration>
+	<include resource="appenders.xml"/>
+	<logger name="jp.momlog.core.entity.dao" level="TRACE" />
+	<root level="DEBUG">
+		<appender-ref ref="APPLICATION-LOG"/>
+		<appender-ref ref="STDOUT" />
+	</root>
+	<logger name="patriot">
+		<level value="INFO" />
+		<appender-ref ref="PATRIOT-LOG" />
+	</logger>
+</configuration>

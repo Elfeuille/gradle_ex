@@ -19,7 +19,6 @@ subprojects {
 		mavenCentral()
 		mavenLocal()
 		maven { url "http://maven.springframework.org/milestone" }
-		maven { url "http://172.28.253.185:8081/nexus/content/groups/public/" }
 		maven { url "http://repo.maven.apache.org/maven2" }
 	}
 

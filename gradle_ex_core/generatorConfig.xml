@@ -6,6 +6,7 @@
 	<context id="context">
 		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
 		<plugin type="jp.elfeuille.gradle.ex.core.AddMysqlOffsetLimitClausePlugin" />
+		<plugin type="jp.elfeuille.gradle.ex.core.AddAutoSchemaChangePlugin" />
 
 		<commentGenerator>
 			<property name="suppressDate" value="true" />
@@ -34,6 +35,7 @@
 		/>
 
 		<table schema="gradle_ex" tableName="test_table" />
+		<table schema="gradle_ex" tableName="schema_change_test_table" />
 
 	</context>
 </generatorConfiguration>

@@ -1,7 +1,7 @@
 package jp.elfeuille.gradle.ex.core.dao.impl;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 import java.util.List;
 
@@ -32,16 +32,16 @@ public class TestTableDaoImplTest {
 
 	@Before
 	public void before() {
-		mapper.insert(this.createEntity(1,  "db value 1"));
-		mapper.insert(this.createEntity(2,  "db value 2"));
-		mapper.insert(this.createEntity(3,  "db value 3"));
-		mapper.insert(this.createEntity(4,  "db value 4"));
-		mapper.insert(this.createEntity(5,  "db value 5"));
-		mapper.insert(this.createEntity(6,  "db value 6"));
-		mapper.insert(this.createEntity(7,  "db value 7"));
-		mapper.insert(this.createEntity(8,  "db value 8"));
-		mapper.insert(this.createEntity(9,  "db value 9"));
-		mapper.insert(this.createEntity(10, "db value 10"));
+		mapper.insert(this.createEntity(1,  "master db value 1"));
+		mapper.insert(this.createEntity(2,  "master db value 2"));
+		mapper.insert(this.createEntity(3,  "master db value 3"));
+		mapper.insert(this.createEntity(4,  "master db value 4"));
+		mapper.insert(this.createEntity(5,  "master db value 5"));
+		mapper.insert(this.createEntity(6,  "master db value 6"));
+		mapper.insert(this.createEntity(7,  "master db value 7"));
+		mapper.insert(this.createEntity(8,  "master db value 8"));
+		mapper.insert(this.createEntity(9,  "master db value 9"));
+		mapper.insert(this.createEntity(10, "master db value 10"));
 	}
 
 	private TestTable createEntity(int id, String value) {
